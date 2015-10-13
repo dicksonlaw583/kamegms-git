@@ -78,8 +78,12 @@ if "%verb:~0,4%" EQU "none" (
 		goto :eof
 	) else (
 		if "%1" EQU "postimport" (
-			echo Adding origin: %2
-			for /f "usebackq tokens=*" %%i in (`git remote add origin "%~2"`) do echo %%i
+			if "%~2" EQU "file:///./" (
+				echo Setting up local repository, no remote origin.
+			) else (
+				echo Adding origin: %2
+				for /f "usebackq tokens=*" %%i in (`git remote add origin "%~2"`) do echo %%i
+			)
 			echo.
 			echo Ignoring SCIfile.txt...
 			echo SCIfile.txt>.gitignore
