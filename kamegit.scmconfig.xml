@@ -19,7 +19,7 @@
     <commit>commit</commit>
     <post-commit></post-commit>
     <pre-delete></pre-delete>
-    <delete>delete</delete>
+    <delete>rm</delete>
     <post-delete></post-delete>
     <pre-info></pre-info>
     <info></info>
@@ -28,7 +28,7 @@
     <import>init</import>
     <post-import>postimport</post-import>
     <pre-lock></pre-lock>
-    <lock>lock</lock>
+    <lock></lock>
     <post-lock></post-lock>
     <pre-rename></pre-rename>
     <rename>mv</rename>
@@ -37,10 +37,10 @@
     <resolve>checkout</resolve>
     <post-resolve></post-resolve>
     <pre-resolved></pre-resolved>
-    <resolved>resolved</resolved>
+    <resolved>add</resolved>
     <post-resolved></post-resolved>
     <pre-revert></pre-revert>
-    <revert>revert</revert>
+    <revert>checkout</revert>
     <post-revert></post-revert>
     <pre-showlog></pre-showlog>
     <showlog>log</showlog>
@@ -49,7 +49,7 @@
     <status>status</status>
     <post-status></post-status>
     <pre-unlock></pre-unlock>
-    <unlock>unlock</unlock>
+    <unlock></unlock>
     <post-unlock></post-unlock>
     <pre-update></pre-update>
     <update>pull</update>
@@ -87,7 +87,7 @@
     <import>.</import>
     <post-import>$SERVERURL</post-import>
     <pre-lock></pre-lock>
-    <lock>$FILE</lock>
+    <lock></lock>
     <post-lock></post-lock>
     <pre-rename></pre-rename>
     <rename>$FILE $RENAMED</rename>
@@ -110,7 +110,7 @@
     <status>$FILE --porcelain</status>
     <post-status></post-status>
     <pre-unlock></pre-unlock>
-    <unlock>$FILE</unlock>
+    <unlock></unlock>
     <post-unlock></post-unlock>
     <pre-update></pre-update>
     <update>origin master</update>
