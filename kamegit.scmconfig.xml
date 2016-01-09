@@ -154,7 +154,7 @@
   </SCM_StatusLog_Codes>
   <SCM_Common_Functions>
     <RefreshAll>Refresh</RefreshAll>
-    <Add>Add All</Add>
+    <AddAll>Add All</AddAll>
     <CommitAll>Commit All</CommitAll>
     <Revert>Revert</Revert>
     <RevertAll>Revert All</RevertAll>
