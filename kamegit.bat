@@ -41,7 +41,7 @@ if "%verb:~0,4%" EQU "none" (
 			goto end_menu
 		:menu_switch
 			TortoiseGitProc /command:switch /path:"%cd%"
-			goto end_menud
+			goto end_menu
 		:menu_branch
 			TortoiseGitProc /command:branch /path:"%cd%"
 			goto end_menu
